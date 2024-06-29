@@ -19,6 +19,12 @@ nav {
     justify-content: space-between;
 
 }
+#chec{
+    display: none;
+}
+.checi{
+    display: none;
+}
 
 .div1 {
     display: flex;
@@ -522,9 +528,30 @@ footer{
     body{
         overflow-x:hidden;
     }
-    nav{
-        display: none;
+
+    .div1 select{
+        background-color:darkcyan ;
     }
+    .div1{
+        flex-direction: column;
+        background-color: darkcyan;
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        padding: 20px;
+        transition: 1s;
+
+    }
+    .checi{
+        display: flex;
+      padding: 30px;
+    }
+    #chec:checked ~ .div1{
+        left:-20% ;
+    }
+
     .section3{
         display: block;
     }
